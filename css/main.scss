@@ -186,14 +186,12 @@ body._touch .menu__list > li._active .menu__arrow {
  }
  
 /*------------------------- Hero section ------------------------------*/
-.page__section_1 {
-  // height: 100vh;
-  position: relative;
-  padding: 200px 0 235px;
-}
+
 .hero__section {
+  position: relative;
   background: url(../img/main-bg.jpg) no-repeat top/cover;
   color: #fff;
+  padding: 200px 0 235px;
 }
 .hero__container {
 	position: relative;
