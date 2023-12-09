@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('fonts/icons.eot?eqk01b');
+  src:  url('fonts/icons.eot?eqk01b#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?eqk01b') format('truetype'),
+    url('fonts/icons.woff?eqk01b') format('woff'),
+    url('fonts/icons.svg?eqk01b#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+  color: #5d2de3;
+}
+.icon-fb:before {
+  content: "\e901";
+  color: #5d2de3;
+}
+.icon-inst:before {
+  content: "\e902";
+  color: #5d2de3;
+}
+.icon-telegram:before {
+  content: "\e903";
+  color: #5d2de3;
+}
