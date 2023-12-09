@@ -89,6 +89,17 @@ body._touch .menu__list > li._active .menu__arrow {
 .header.header_scrolling {
   background: #000;
 }
+.header-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+  margin-top: -72px;
+}
+
+.header__menu {
+  position: sticky;
+  top: 0;
+}
 .header__container {
 	margin: 0 auto;
 	display: flex;
@@ -108,7 +119,11 @@ body._touch .menu__list > li._active .menu__arrow {
 .menu__icon {
   display: none;
 }
-
+.category {
+  font-size: 32px;
+  font-family: 'MakLight';
+  display: none;
+}
 .menu__list {
   display: flex;
 }
@@ -174,7 +189,7 @@ body._touch .menu__list > li._active .menu__arrow {
 .page__section_1 {
   // height: 100vh;
   position: relative;
-  padding: 10% 0 15%;
+  padding: 200px 0 235px;
 }
 .hero__section {
   background: url(../img/main-bg.jpg) no-repeat top/cover;
@@ -205,6 +220,7 @@ body._touch .menu__list > li._active .menu__arrow {
   font-size: 24px;
   line-height: 130%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .hero__offer {
@@ -244,10 +260,15 @@ body._touch .menu__list > li._active .menu__arrow {
 .form_section {
   transform: translateY(-100px);
 }
+.form_section__body {
+  display: flex;
+  justify-content: center;
+}
 .top_form {
   background: #080808;
   padding: 38px 27px;
   text-align: center;
+  max-width: 1100px;
   .form__title {
     font-size: 24px;
     span {
@@ -258,11 +279,14 @@ body._touch .menu__list > li._active .menu__arrow {
     display: flex;
     justify-content: center;
     margin: 24px 0;
+    width: 100%;
     input {
       background: none;
       border-bottom: 1px solid #8E8E8E;
-      padding: 5px 10px;
+      padding: 10px;
       margin: 0 16px;
+      font-size: 16px;
+      width: 100%;
     }
     input[placeholder] {
       color: #ffffff;
@@ -284,6 +308,12 @@ body._touch .menu__list > li._active .menu__arrow {
     text-align: center;
     vertical-align: middle;
     transition: color ease 0.3s;
+  }
+  .form__group2 label {
+    a {
+      color: #3EC300;
+      text-decoration: underline;
+    }
   }
   input[type=checkbox]:checked + label:before {
     background: #4ae403;
@@ -388,7 +418,7 @@ body._touch .menu__list > li._active .menu__arrow {
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: all 0.5s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .popup.open {
@@ -493,26 +523,19 @@ body._touch .menu__list > li._active .menu__arrow {
 
 }
 
-
-@media screen and (max-width: 767px) {
-
-}
-
-
-@media screen and (max-width: 512px) {
-
-
-}
-
-
-
 @media screen and (max-width: 810px) {
-  .header__container {
-    flex-direction: row;
+.header__container {
+  flex-direction: row;
 }
 .header__logo {
   width: 100px;
-
+}
+.header-out {
+  margin-top: 0;
+}
+.category {
+  display: block;
+  padding-left: 20px;
 }
   .header__menu {
     order: 3;
@@ -569,7 +592,7 @@ body._touch .menu__list > li._active .menu__arrow {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #000000;
+    background: #000000e9;
     padding: 100px 30px 30px 0px;
     transition: left 0.3s ease 0s;
     overflow: auto;
@@ -588,12 +611,15 @@ body._touch .menu__list > li._active .menu__arrow {
     z-index: 2;
   }
   .menu__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top: 10%;
-	  flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
   }
   .menu__list > li {
       flex-wrap: wrap;
-    	margin: 0px 0px 30px 0px;
+    	margin: 0px 0px 40px 0px;
   }
   .menu__list > li:last-child {
     margin-bottom: 0;
@@ -608,6 +634,20 @@ body._touch .menu__list > li._active .menu__arrow {
   
 }
 
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 640px) {
+  .top_form .form__group {
+    flex-direction: column;
+  }
+  .top_form .form__group input {
+    padding: 18px 0;
+    margin: 0;
+  }
+
+}
+
 @media screen and (max-width: 480px) {
   .hero__offer .hero-title {
     font-size: 40px;
@@ -616,18 +656,24 @@ body._touch .menu__list > li._active .menu__arrow {
     font-size: 18px;
     margin-bottom: 30px;
   }
-  .footer__body {
+  .action_btn {
+    display: flex;
     flex-direction: column;
   }
-  .footer__logo,
-  .footer__messengers,
-  .footer__call-us,
-  .footer__address {
-    margin: 0 15px 35px;
+  .hero__offer {
+    .action_btn {
+      width: 80%;
+      .btn {
+        margin: 0 0 18px 0;
+        text-align: center;
+      }
+      .btn_catalog {
+        margin: 0 0 18px 0;
+        text-align: center;
+      }
+    }
   }
-  .footer__left-text {
-    margin-bottom: 15px;
-  }
+
 }
 
 @media screen and (max-width: 420px) {

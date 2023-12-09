@@ -65,19 +65,33 @@ if(menuLinks.length > 0) {
 }
 
 // Фон при скроле шапки
-
 $(document).ready(function(){
     $(window).scroll(function(){
-      var scroll = $(window).scrollTop();
+      const scroll = $(window).scrollTop();
       if (scroll > 40) {
         $(".header").css("background" , "rgba(0,0,0,1)"); 
       }
-
       else{
         $(".header").css("background" , "rgba(255,255,255,0)"); 
       }
     })
     })
+
+//Скрыть лого при скроле
+const logo = $('.header__logo'),
+scrollPrev = 0;
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+    
+    if ( scrolled > 100 && scrolled > scrollPrev ) {
+    logo.addClass('header-out');
+    } else {
+    logo.removeClass('header-out');
+    }
+    // scrollPrev = scrolled;
+});
+
 
 // $('#form').submit(function(){
 // 	$.ajax({
