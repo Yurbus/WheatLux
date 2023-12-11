@@ -87,7 +87,8 @@
 						<h2 class="section__spirt_title h2_title">Спирт</h2>
 
 						<div class="catalog-grid">
-							<div class="card ">
+							
+							<div class="card" data-id="1">
                                 <div class="card__image"><img src="img/chivas.png" alt=""></div>
 								<div class="card__title">Віскі Chivas Regal, 2л.</div>
 								<div class="card__price" data-price="500">285 ₴</div>
@@ -110,7 +111,7 @@
 									<a href="#popup" class="card_btn-link popup-link">Замовити в 1 клік</a>
 								</div>
 							</div>
-							<div class="card ">
+							<div class="card" data-id="2">
                                 <div class="card__image"><img src="img/vysky-black-velvet-2l-1.png" alt=""></div>
 								<div class="card__title">Віскі Black Velvet, 2л.</div>
 								<div class="card__price" data-price="500">290 ₴</div>
@@ -133,7 +134,7 @@
 									<a href="#popup" class="card_btn-link popup-link">Замовити в 1 клік</a>
 								</div>
 							</div>
-							<div class="card ">
+							<div class="card" data-id="3">
                                 <div class="card__image"><img src="img/black-label-2l.png" alt=""></div>
 								<div class="card__title">Віскі Black Label, 2л.</div>
 								<div class="card__price" data-price="500">280 ₴</div>
@@ -156,7 +157,7 @@
 									<a href="#popup" class="card_btn-link popup-link">Замовити в 1 клік</a>
 								</div>
 							</div>
-							<div class="card ">
+							<div class="card" data-id="4">
                                 <div class="card__image"><img src="img/vysky-2l.-jameson.png" alt=""></div>
 								<div class="card__title">Віскі Jameson, 2л.</div>
 								<div class="card__price" data-price="500">295 ₴</div>
@@ -217,7 +218,7 @@
 			<div class="popup__body">
 				<div class="popup__content">
 					<a href="#" class="popup__close close-popup"><img src="img/svg_icons/close.svg" alt="close"></a>
-					<form action="" id="form" method="POST" class="modal-form__body">
+					<form action="" id="form" method="POST" class="modal-form__body" >
 
 						<div class="card_modal">
 							<div class="image__block">
@@ -268,6 +269,7 @@
 	<script src="js/popups.js"></script>
    	<script src="js/main.js"></script>
 	<script src="js/aos.js"></script>
+	<script src="js/sendModalCard.js"></script>
 	<script>
 	// Анимация контента
 		AOS.init();
