@@ -337,6 +337,10 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 /*----------------- Spirt section -------------------------------------*/
+.section__spirt {
+  margin-top: 60px;
+}
+
 .h2_title {
   font-size: 96px;
   font-family: "MakLight";
@@ -389,6 +393,11 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 .card__btn .card_btn-link:hover {
   background: #48dd02;
+}
+
+/*----------------- Vodka section -------------------------------------*/
+.section__vodka {
+  margin-top: 60px;
 }
 
 /*----------------- footer -------------------------------------*/
