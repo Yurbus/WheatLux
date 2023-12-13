@@ -470,7 +470,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .modal-form__body {
   background: #080808;
-  padding: 30px 40px;
+  padding: 20px;
 }
 .card_modal {
 }
@@ -486,6 +486,9 @@ body._touch .menu__list > li._active .menu__arrow {
   }
   .card__price {
   }
+}
+.productPrice {
+  font-size: 28px;
 }
 
 .modal-prices__block {
@@ -518,8 +521,27 @@ body._touch .menu__list > li._active .menu__arrow {
   width: 100%;
   margin-top: 25px;
   font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    background: #42d100;
+  }
 }
-
+.card_btn-link {
+  display: flex;
+  justify-content: center;
+  background: #3EC300;
+  padding: 17px;
+  color: #000;
+}
+.form__wrapper-img {
+  display: flex;
+}
+.form__wrapper {
+  margin-top: 10px;
+}
+.form__item {
+  margin-bottom: 20px;
+}
 
 
 /*------------------------------ Media query ------------------------------------------*/
