@@ -699,6 +699,14 @@ body._touch .menu__list > li._active .menu__arrow {
     margin: 0 0 18px 0;
     text-align: center;
   }
+  .card_btn-link {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    background: #3EC300;
+    padding: 12px;
+    color: #000;
+  }
 }
 @media screen and (max-width: 420px) {
   .hero__offer .btn {
