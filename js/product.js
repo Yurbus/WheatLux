@@ -28,11 +28,11 @@
                     <img src="${productImg}" style="max-width: 168px;">
                     <ul class="form__item form__item-check">
                         <li>
-                            <input type="checkbox" id="productTitle" name="Name" checked style="display: none;" />
+                            <input type="checkbox" id="productTitle" name="title" checked style="display: none;" />
                             <label for="scales">${productTitle}</label>
                         </li>
                         <li>    
-                            <input type="checkbox" id="productPrice" name="Price" checked style="display: none;" />
+                            <input type="checkbox" id="productPrice" name="price" checked style="display: none;" />
                             <label class="productPrice" for="scales" >${productPrice}</label>
                         </li>
                     </ul>
