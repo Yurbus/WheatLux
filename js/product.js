@@ -19,6 +19,11 @@
              const modalProductDetails = modal.querySelector('#modal-product-details');
              modalProductDetails.innerHTML = `
             <form action="" id="form" method="POST" class="modal-form__body" >
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Alkohol">
+                <input type="hidden" name="admin_email" value="frankins636@gmail.com">
+                <input type="hidden" name="form_subject" value="Заявка">
+                <!-- END Hidden Required Fields -->
                 <div class="form__wrapper-img">
                     <img src="${productImg}" style="max-width: 168px;">
                     <ul class="form__item form__item-check">
