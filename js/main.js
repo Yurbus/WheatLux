@@ -93,6 +93,8 @@ $(window).scroll(function() {
 });
 
 
+
+
 $('#form').submit(function(){
 	$.ajax({
 		type:"POST",
