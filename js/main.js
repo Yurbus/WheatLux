@@ -99,7 +99,7 @@ $('#form').submit(function(){
 		url: "mail.php",
 		data: $(this).serialize()
 	}).done(function() {
-	alert("Спасибо что обратились ко мне!");
+	alert("Дякоэмо за звернення!");
 	setTimeout(function() {
 		$.magnificPopup.close();
 	}, 1000);

@@ -42,7 +42,7 @@
                         <input type="text" name="name" class="form__input input-form" placeholder="Ім'я*:" required>
                     </div>
                     <div class="form__item">
-                        <input type="tel" name="phone" class="form__input input-form" placeholder="Телефон*:" required>
+                        <input type="tel" name="phone" class="form__input input-form phone_mask_product" placeholder="Телефон*:" required>
                     </div>
                 </div>
                 <button type="submit" class="modal_submit">Замовити</button>
@@ -50,21 +50,22 @@
             `;
 
              // Показываем модальное окно
-             modal.style.display = 'block';
+            //  modal.style.display = 'block';
          });
      });
 
      // Закрываем модальное окно при клике на кнопку закрытия
-     closeBtn.addEventListener('click', () => {
-         modal.style.display = 'none';
-     });
+    //  closeBtn.addEventListener('click', () => {
+    //      modal.style.display = 'none';
+    //  });
 
      // Закрываем модальное окно при клике за его пределами
-     window.addEventListener('click', event => {
-         if (event.target === modal) {
-             modal.style.display = 'none';
-         }
-     });
+    //  window.addEventListener('click', event => {
+    //      if (event.target === modal) {
+    //          modal.style.display = 'none';
+    //      }
+    //  });
+
 
 
 
