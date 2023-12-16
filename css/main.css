@@ -163,10 +163,14 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #3EC300;
 }
 
+.menu__link.active {
+  color: #3EC300;
+}
+
 .menu__link:hover::after {
   width: 100%;
   transition: 0.3s ease all;
-  background-color: #3EC300;
+  background-color: #309500;
 }
 
 .header__mobile {
@@ -184,8 +188,8 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .header__mobile a:hover {
-  color: #3EC300;
-  border: 1px solid #3EC300;
+  color: #309500;
+  border: 1px solid #309500;
 }
 
 /*------------------------- Hero section ------------------------------*/
@@ -214,7 +218,7 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .hero__offer .hero-title span {
-  color: #3EC300;
+  color: #309500;
 }
 
 .hero__offer .text {
@@ -230,7 +234,7 @@ body._touch .menu__list > li._active .menu__arrow {
   font-size: 16px;
   line-height: 140%;
   color: #000000;
-  background: #3EC300;
+  background: #309500;
   border: 1px solid transparent;
   padding: 17px 53px;
   margin: 0 10px;
@@ -241,14 +245,14 @@ body._touch .menu__list > li._active .menu__arrow {
   line-height: 140%;
   -webkit-backdrop-filter: blur(18px);
           backdrop-filter: blur(18px);
-  border: 1px solid #3EC300;
+  border: 1px solid #309500;
   color: #fff;
   padding: 17px 53px;
   margin: 0 10px;
 }
 .hero__offer .action_btn .btn:hover {
-  border: 1px solid #3EC300;
-  background: #4ae403;
+  border: 1px solid #309500;
+  background: #309500;
 }
 .hero__offer .action_btn .btn_catalog:hover {
   background: #3EC300;
@@ -302,7 +306,7 @@ body._touch .menu__list > li._active .menu__arrow {
   align-items: center;
   justify-content: center;
   border-radius: 1px;
-  border: 1px solid #4ae403;
+  border: 1px solid #309500;
   margin: -2px 20px 0 0;
   height: 24px;
   width: 24px;
@@ -311,11 +315,11 @@ body._touch .menu__list > li._active .menu__arrow {
   transition: color ease 0.3s;
 }
 .top_form .form__group2 label a {
-  color: #3EC300;
+  color: #309500;
   text-decoration: underline;
 }
 .top_form input[type=checkbox]:checked + label:before {
-  background: #4ae403;
+  background: #309500;
   content: url(../img/check.svg);
 }
 .top_form fieldset {
@@ -337,7 +341,16 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 /*----------------- Spirt section -------------------------------------*/
-.section__spirt {
+.section__spirt,
+.section__vodka,
+.section__konyak,
+.section__vysky,
+.section__burbon,
+.section__brendi,
+.section__liker,
+.section__rom,
+.section__djin,
+.section__tequila {
   margin-top: 60px;
 }
 
@@ -350,7 +363,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 .catalog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(295px, 23%));
   gap: 20px;
   padding-bottom: 50px;
 }
@@ -358,6 +371,7 @@ body._touch .menu__list > li._active .menu__arrow {
 .card {
   background: #0c0c0c;
   padding: 24px 17px;
+  position: relative;
 }
 
 .card__title {
@@ -371,8 +385,8 @@ body._touch .menu__list > li._active .menu__arrow {
 .prices__block {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 75px;
 }
 
 .card__prices li {
@@ -384,14 +398,22 @@ body._touch .menu__list > li._active .menu__arrow {
   color: #fff;
 }
 
-.card__btn .card_btn-link {
+.view_product {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  padding-right: 35px;
+}
+
+.card_btn-link {
   display: flex;
   justify-content: center;
   background: #3EC300;
-  padding: 17px;
+  padding: 15px 0;
   color: #000;
 }
-.card__btn .card_btn-link:hover {
+
+.card_btn-link:hover {
   background: #48dd02;
 }
 
@@ -462,7 +484,7 @@ body._touch .menu__list > li._active .menu__arrow {
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .popup.open {
@@ -801,6 +823,9 @@ body._touch .menu__list > li._active .menu__arrow {
   }
   .top_form .form__title {
     font-size: 21px;
+  }
+  .h2_title {
+    font-size: 50px;
   }
   .popup__close {
     right: 22px;

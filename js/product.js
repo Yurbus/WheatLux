@@ -19,15 +19,20 @@
              const modalProductDetails = modal.querySelector('#modal-product-details');
              modalProductDetails.innerHTML = `
             <form action="" id="form" method="POST" class="modal-form__body" >
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Alkohol">
+                <input type="hidden" name="admin_email" value="frankins636@gmail.com">
+                <input type="hidden" name="form_subject" value="Заявка">
+                <!-- END Hidden Required Fields -->
                 <div class="form__wrapper-img">
                     <img src="${productImg}" style="max-width: 168px;">
                     <ul class="form__item form__item-check">
                         <li>
-                            <input type="checkbox" id="productTitle" name="Name" checked style="display: none;" />
+                            <input type="checkbox" id="productTitle" name="title" checked style="display: none;" />
                             <label for="scales">${productTitle}</label>
                         </li>
                         <li>    
-                            <input type="checkbox" id="productPrice" name="Price" checked style="display: none;" />
+                            <input type="checkbox" id="productPrice" name="price" checked style="display: none;" />
                             <label class="productPrice" for="scales" >${productPrice}</label>
                         </li>
                     </ul>
@@ -37,7 +42,7 @@
                         <input type="text" name="name" class="form__input input-form" placeholder="Ім'я*:" required>
                     </div>
                     <div class="form__item">
-                        <input type="tel" name="phone" class="form__input input-form" placeholder="Телефон*:" required>
+                        <input type="tel" name="phone" class="form__input input-form phone_mask_product" placeholder="Телефон*:" required>
                     </div>
                 </div>
                 <button type="submit" class="modal_submit">Замовити</button>
@@ -45,21 +50,22 @@
             `;
 
              // Показываем модальное окно
-             modal.style.display = 'block';
+            //  modal.style.display = 'block';
          });
      });
 
      // Закрываем модальное окно при клике на кнопку закрытия
-     closeBtn.addEventListener('click', () => {
-         modal.style.display = 'none';
-     });
+    //  closeBtn.addEventListener('click', () => {
+    //      modal.style.display = 'none';
+    //  });
 
      // Закрываем модальное окно при клике за его пределами
-     window.addEventListener('click', event => {
-         if (event.target === modal) {
-             modal.style.display = 'none';
-         }
-     });
+    //  window.addEventListener('click', event => {
+    //      if (event.target === modal) {
+    //          modal.style.display = 'none';
+    //      }
+    //  });
+
 
 
 
